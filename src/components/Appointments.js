@@ -2,9 +2,6 @@ import React, {Component} from "react";
 import { MDBCard, MDBCardBody, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
 
 class Appointments extends Component {
-    constructor(props){
-        super(props);
-    }
     render() {
         return (
             <div className="appointments-container">
@@ -28,7 +25,7 @@ class Appointments extends Component {
                                     <MDBCardBody>
                                         <div style={{display: 'flex', alignItems: 'center'}}>
                                             <div className="">
-                                                <img src={item.picture.thumbnail} style={{width:"40px"}} />
+                                                <img src={item.picture.thumbnail} style={{width:"40px"}} alt="patient-thumbnail" />
                                             </div>
                                             <div style={{marginLeft: '10px'}}>
                                                 <div className="patient-name">{`${item.name.first} ${item.name.last}`}</div>

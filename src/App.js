@@ -20,7 +20,6 @@ class App extends Component {
   componentDidMount(){
     axios.get('https://randomuser.me/api/?results=20').then((response) => {
    this.setState({patientList: response.data.results});
-   console.log(response, 'response')
  });
 }
   render() {

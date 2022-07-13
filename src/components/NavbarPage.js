@@ -1,25 +1,15 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBCollapse, MDBIcon} from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
 
 class NavbarPage extends Component {
-state = {
-  isOpen: false
-};
-
-toggleCollapse = () => {
-  this.setState({ isOpen: !this.state.isOpen });
-}
-
 render() {
   return (
-    <Router>
       <MDBNavbar color="default-color" dark expand="md">
         <MDBNavbarBrand>
           <MDBIcon className="fas fa-heartbeat heart-icon"></MDBIcon>
           <strong className="white-text">H.Care</strong>
         </MDBNavbarBrand>
-        <MDBCollapse id="" isOpen={this.state.isOpen} navbar>
+        <MDBCollapse navbar>
           <MDBNavbarNav left>
             <MDBNavItem>
               Dashboard
@@ -35,7 +25,6 @@ render() {
           <span className="user-details">Alice Morgan<span style={{marginLeft: '5px'}}><MDBIcon icon="angle-down" /></span></span>
             </MDBNavbarNav>
       </MDBNavbar>
-    </Router>
     );
   }
 }

@@ -21,7 +21,7 @@ class CurrentPatients extends Component {
                             <MDBCardBody>
                                 <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                                     <div className="">
-                                        <img src={item.picture.thumbnail} style={{width:"40px"}} />
+                                        <img src={item.picture.thumbnail} style={{width:"40px"}} alt="patient-thumbnail" />
                                     </div>
                                     <div>
                                         <div className="patient-name">{`${item.name.first} ${item.name.last}`}</div>
